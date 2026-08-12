@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-group button[type="submit"] {
+    background: #333;
+    color: white;
+}
+
+.button-group button[type="button"] {
+    background: #ddd;
+    color: #333;
+}
+
+.button-group button:hover {
+    opacity: 0.85;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#result {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f4f6f8;
+    line-height: 1.8;
+}
+.error {
+    color: #b00020;
+    font-weight: bold;
+    text-align: center;
+}
+.grade {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.status {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.status.pass {
+    background: #e6f4ea;
+    color: #137333;
+}
+
+.status.fail {
+    background: #fce8e6;
+    color: #c5221f;
+}
+.grading-scale {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.grading-scale h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.grade-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.grade-row span:first-child {
+    font-weight: bold;
+}
