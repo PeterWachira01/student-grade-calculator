@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #75b5f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.container {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#taskList {
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+#taskList li {
+    background: #f4f6f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #333;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.completed button {
+    opacity: 0.7;
+}
+#taskList li button {
+    margin-top: 10px;
+    margin-right: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+#taskList li button:first-of-type {
+    background: #2e7d32;
+    color: white;
+}
+
+#taskList li button:last-of-type {
+    background: #c62828;
+    color: white;
+}
+.task-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.task-number {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.task-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task-description {
+    margin-top: 5px;
+    color: #555;
+    margin-left: 30px;
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.button-group button {
+    flex: 1;
+}
+.complete-button {
+    background: #28a745;
+    color: white;
+}
+.delete-button {
+    background: #dc3545;
+    color: white;
+}
